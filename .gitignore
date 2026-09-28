@@ -9,3 +9,10 @@ build/
 *.iml
 .DS_Store
 web/index.html
+.godot/
+**/bin/
+**/obj/
+native/Game/Data/campaign.*.json
+native/Game/exports/
+*.user
+*.suo

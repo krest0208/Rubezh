@@ -1,0 +1,326 @@
+[
+  {
+    "id": "mg_0",
+    "unit": "mg",
+    "name": "Полевой расчёт",
+    "description": "Станок на треноге и открытый бруствер.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/mg_0.svg"
+  },
+  {
+    "id": "mg_1",
+    "unit": "mg",
+    "name": "ДОТ «Гранит»",
+    "description": "Закрытая бетонная казематная позиция.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/mg_1.svg"
+  },
+  {
+    "id": "mg_2",
+    "unit": "mg",
+    "name": "Спарка «Шершень»",
+    "description": "Гусеничная платформа и два ствола.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/mg_2.svg"
+  },
+  {
+    "id": "rifle_0",
+    "unit": "rifle",
+    "name": "Стрелковая ячейка",
+    "description": "Одиночная винтовка и мешки с песком.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/rifle_0.svg"
+  },
+  {
+    "id": "rifle_1",
+    "unit": "rifle",
+    "name": "Вышка «Дозор»",
+    "description": "Деревянный настил на раскосах и оптика.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/rifle_1.svg"
+  },
+  {
+    "id": "rifle_2",
+    "unit": "rifle",
+    "name": "Расчёт «Беркут»",
+    "description": "Два стрелка за угловыми бронещитами.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/rifle_2.svg"
+  },
+  {
+    "id": "mortar_0",
+    "unit": "mortar",
+    "name": "Опорная плита",
+    "description": "Открытая позиция на круглой плите.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/mortar_0.svg"
+  },
+  {
+    "id": "mortar_1",
+    "unit": "mortar",
+    "name": "Самоходка «Туча»",
+    "description": "Бронированный гусеничный носитель.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/mortar_1.svg"
+  },
+  {
+    "id": "mortar_2",
+    "unit": "mortar",
+    "name": "Батарея «Гром»",
+    "description": "Два тяжёлых ствола на колёсном лафете.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/mortar_2.svg"
+  },
+  {
+    "id": "cannon_0",
+    "unit": "cannon",
+    "name": "Полевое орудие",
+    "description": "Колёсный лафет, щит и раздвижные станины.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/cannon_0.svg"
+  },
+  {
+    "id": "cannon_1",
+    "unit": "cannon",
+    "name": "САУ «Бастион»",
+    "description": "Низкая рубка на широких гусеницах.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/cannon_1.svg"
+  },
+  {
+    "id": "cannon_2",
+    "unit": "cannon",
+    "name": "Каземат «Титан»",
+    "description": "Бетонный форт со спаренными пушками.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/cannon_2.svg"
+  },
+  {
+    "id": "sapper_0",
+    "unit": "sapper",
+    "name": "Инженерный пост",
+    "description": "Запасы мин, расчёт и противотанковый ёж.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/sapper_0.svg"
+  },
+  {
+    "id": "sapper_1",
+    "unit": "sapper",
+    "name": "Тягач «Крот»",
+    "description": "Гусеничная машина с широким отвалом.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/sapper_1.svg"
+  },
+  {
+    "id": "sapper_2",
+    "unit": "sapper",
+    "name": "Станция «Импульс»",
+    "description": "Радиостанция и два выносных устройства.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/sapper_2.svg"
+  },
+  {
+    "id": "rocket_0",
+    "unit": "rocket",
+    "name": "БМ «Катюша»",
+    "description": "Пакет направляющих на грузовом шасси.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/rocket_0.svg"
+  },
+  {
+    "id": "rocket_1",
+    "unit": "rocket",
+    "name": "РС «Буран»",
+    "description": "Удлинённые направляющие на гусеницах.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/rocket_1.svg"
+  },
+  {
+    "id": "rocket_2",
+    "unit": "rocket",
+    "name": "Батарея «Ураган»",
+    "description": "Шесть направляющих на стационарной опоре.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/rocket_2.svg"
+  },
+  {
+    "id": "infantry_0",
+    "unit": "infantry",
+    "name": "Стрелок",
+    "description": "Винтовка, каска и полевой ранец.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/infantry_0.svg"
+  },
+  {
+    "id": "infantry_1",
+    "unit": "infantry",
+    "name": "Щитоносец",
+    "description": "Большой бронещит и короткое оружие.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/infantry_1.svg"
+  },
+  {
+    "id": "infantry_2",
+    "unit": "infantry",
+    "name": "Огнемётчик",
+    "description": "Баллоны, шланг и тяжёлый огнемёт.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/infantry_2.svg"
+  },
+  {
+    "id": "scout_0",
+    "unit": "scout",
+    "name": "Разведчик",
+    "description": "Плащ-накидка и лёгкое снаряжение.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/scout_0.svg"
+  },
+  {
+    "id": "scout_1",
+    "unit": "scout",
+    "name": "Моторазведка",
+    "description": "Мотоцикл с боковой коляской.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/scout_1.svg"
+  },
+  {
+    "id": "scout_2",
+    "unit": "scout",
+    "name": "Бронедозор",
+    "description": "Четырёхколёсная разведывательная машина.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/scout_2.svg"
+  },
+  {
+    "id": "truck_0",
+    "unit": "truck",
+    "name": "Тентованный",
+    "description": "Грузовой кузов под тканевым тентом.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/truck_0.svg"
+  },
+  {
+    "id": "truck_1",
+    "unit": "truck",
+    "name": "Боеприпасы",
+    "description": "Открытый кузов с отдельными ящиками.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/truck_1.svg"
+  },
+  {
+    "id": "truck_2",
+    "unit": "truck",
+    "name": "Цистерна",
+    "description": "Объёмный бак с люком и обвязкой.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/truck_2.svg"
+  },
+  {
+    "id": "halftrack_0",
+    "unit": "halftrack",
+    "name": "Полугусеничный",
+    "description": "Открытый десантный отсек и передние колёса.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/halftrack_0.svg"
+  },
+  {
+    "id": "halftrack_1",
+    "unit": "halftrack",
+    "name": "Командный",
+    "description": "Закрытая радиорубка и рамочная антенна.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/halftrack_1.svg"
+  },
+  {
+    "id": "halftrack_2",
+    "unit": "halftrack",
+    "name": "Зенитный",
+    "description": "Полные гусеницы и спаренная установка.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/halftrack_2.svg"
+  },
+  {
+    "id": "tank_0",
+    "unit": "tank",
+    "name": "Средний танк",
+    "description": "Поворотная башня и длинная пушка.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/tank_0.svg"
+  },
+  {
+    "id": "tank_1",
+    "unit": "tank",
+    "name": "Штурмовое орудие",
+    "description": "Цельная рубка и утолщённый ствол.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/tank_1.svg"
+  },
+  {
+    "id": "tank_2",
+    "unit": "tank",
+    "name": "Двухствольный",
+    "description": "Круглая башня со спаркой и боковыми блоками.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/tank_2.svg"
+  },
+  {
+    "id": "heavy_0",
+    "unit": "heavy",
+    "name": "Тяжёлый танк",
+    "description": "Широкие гусеницы и массивная башня.",
+    "variant": 0,
+    "price": 0,
+    "asset": "Art/Models/heavy_0.svg"
+  },
+  {
+    "id": "heavy_1",
+    "unit": "heavy",
+    "name": "Осадная машина",
+    "description": "Высокая рубка и крупнокалиберное орудие.",
+    "variant": 1,
+    "price": 6,
+    "asset": "Art/Models/heavy_1.svg"
+  },
+  {
+    "id": "heavy_2",
+    "unit": "heavy",
+    "name": "Сухопутный крейсер",
+    "description": "Два ствола и увеличенные бортовые модули.",
+    "variant": 2,
+    "price": 12,
+    "asset": "Art/Models/heavy_2.svg"
+  }
+]
