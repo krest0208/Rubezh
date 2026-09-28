@@ -1,0 +1,11 @@
+*.jks
+*.keystore
+*.pem
+local.properties
+.gradle/
+build/
+**/build/
+.idea/
+*.iml
+.DS_Store
+web/index.html
