@@ -47,6 +47,7 @@ jobs:
           mkdir -p native/Game/exports/android
           Godot_v4.5.1-stable_mono_linux.x86_64 --headless --path native/Game --export-debug Android 2>&1 | tee /tmp/android-export.log
           test -s native/Game/exports/android/Rubezh-0.1.0-preview.apk
+          python tools/check_android_apk.py native/Game/exports/android/Rubezh-0.1.0-preview.apk
           "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose native/Game/exports/android/Rubezh-0.1.0-preview.apk
           "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging native/Game/exports/android/Rubezh-0.1.0-preview.apk
           sha256sum native/Game/exports/android/Rubezh-0.1.0-preview.apk > native/Game/exports/android/SHA256SUMS.txt
