@@ -55,9 +55,9 @@ public partial class BattleBoard : Control
         for(int x=0;x<1200;x+=60) DrawLine(new Vector2(x,0),new Vector2(x,620),new Color(1,1,1,.025f));
         for(int y=0;y<620;y+=60) DrawLine(new Vector2(0,y),new Vector2(1200,y),new Color(1,1,1,.025f));
         var path=Path;
-        DrawPolyline(path,new Color("#354734"),66,true); DrawPolyline(path,road,54,true);
-        foreach(var p in path) {DrawCircle(p,32,new Color("#354734"));DrawCircle(p,26,road);}
-        DrawPolyline(path,new Color(snow?"#899b8b":"#b9a87d"),34,true);
+        StrokeRoute(path,new Color("#354734"),66);
+        StrokeRoute(path,road,54);
+        StrokeRoute(path,new Color(snow?"#899b8b":"#b9a87d"),34);
         for(float d=0;d<battle.Route.Length;d+=37)
         { var (p,a)=battle.Route.At(d); var v=ToGodot(p); var normal=new Vector2(-Mathf.Sin(a),Mathf.Cos(a))*14; DrawLine(v-normal,v+normal,new Color(0,0,0,.1f),3,true); }
         foreach(var (p,s) in trees)
@@ -94,6 +94,12 @@ public partial class BattleBoard : Control
             else DrawCircle(to,4*fade,c);
         }
         DrawSetTransform(Vector2.Zero);
+    }
+    void StrokeRoute(Vector2[] points,Color color,float width)
+    {
+        // Round each join in a complete layer; no miter spikes or overpainted seams.
+        for(int i=1;i<points.Length;i++)DrawLine(points[i-1],points[i],color,width,true);
+        foreach(var point in points)DrawCircle(point,width/2,color);
     }
     void Bar(Vector2 p,float value,Color color,float w) {DrawRect(new Rect2(p.X-w/2,p.Y,w,4),new Color("#18241d"));DrawRect(new Rect2(p.X-w/2,p.Y,w*Math.Clamp(value,0,1),4),color);}
 }

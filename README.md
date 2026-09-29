@@ -11,8 +11,7 @@
 1. Установить [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
 2. Скачать [Godot 4.5.1 .NET](https://godotengine.org/download/archive/4.5.1-stable/)
    (версию с поддержкой C#).
-3. Открыть `native/Game/project.godot` в Godot, нажать **Build**, затем **F6/F5**
-   (для запуска главной сцены — F5).
+3. Открыть `native/Game/project.godot` в Godot, нажать **Build**, затем **F5**.
 
 Данные и модели уже включены. Node.js и Python для запуска новой игры не нужны.
 

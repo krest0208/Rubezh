@@ -8,11 +8,13 @@ public partial class ArmoryView : MarginContainer
     public ArmoryView(App app,string? unit=null)
     {
         unit??="mg"; var unitId=unit;
-        var page=app.Page("АРСЕНАЛ",app.ShowMenu); AddChild(Ui.Margin(page));
+        var page=app.Page("АРСЕНАЛ",app.ShowMenu); page.AddThemeConstantOverride("separation",14); AddChild(Ui.Margin(page));
         page.AddChild(Ui.Text("Иной силуэт. Тот же расчёт.",36));
         page.AddChild(Ui.Text("Модели меняют корпус, шасси и вооружение. Боевые характеристики одинаковы.",18,Ui.Muted));
         var row=Ui.HBox(24); row.SizeFlagsVertical=SizeFlags.ExpandFill; page.AddChild(row);
-        var choices=Ui.VBox(7); choices.CustomMinimumSize=new Vector2(210,0); row.AddChild(choices);
+        var sidebar=new ScrollContainer{CustomMinimumSize=new Vector2(210,0),HorizontalScrollMode=ScrollContainer.ScrollMode.Disabled,SizeFlagsVertical=SizeFlags.ExpandFill};
+        row.AddChild(sidebar);
+        var choices=Ui.VBox(7); choices.SizeFlagsHorizontal=SizeFlags.ExpandFill; sidebar.AddChild(choices);
         choices.AddChild(Ui.Text("УКРЕПЛЕНИЯ",14,Ui.Gold));
         foreach(var tower in app.Content.Towers) { string id=tower.Id; choices.AddChild(Ui.Button(tower.Name,()=>app.ShowArmory(id),unit==id)); }
         choices.AddChild(Ui.Text("ПРОТИВНИК",14,Ui.Gold));
@@ -29,10 +31,10 @@ public partial class ArmoryView : MarginContainer
             card.AddChild(Ui.Text(active?"НА ВООРУЖЕНИИ":owned?"В КОЛЛЕКЦИИ":"◆ "+model.Price,16,active?Ui.Gold:Ui.Muted));
             var b=Ui.Button(active?"Выбрана":owned?"Экипировать":"Купить и экипировать",()=>{
                 if(app.Transaction(p=>p.BuyOrEquip(model))) app.ShowArmory(unitId);
-                else if(app.Store.Warning is not null) bMessage.Text=app.Store.Warning;
+                else if(app.Store.Warning is not null) {bMessage.Text=app.Store.Warning;bMessage.Show();}
             },!active); b.Disabled=active || (!owned && app.Store.Current.Gems<model.Price); card.AddChild(b);
         }
-        page.AddChild(bMessage); page.AddChild(Ui.Text("+3 бриллианта за первое прохождение операции. 18 доступны в новом профиле.",16,Ui.Muted));
+        bMessage.Hide(); page.AddChild(bMessage); page.AddChild(Ui.Text("+3 бриллианта за первое прохождение операции. 18 доступны в новом профиле.",16,Ui.Muted));
     }
     readonly Label bMessage=Ui.Text("",16,Ui.Red);
 }

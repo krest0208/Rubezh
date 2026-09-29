@@ -9,7 +9,7 @@ public partial class App : Control
     public Content Content { get; private set; }=null!;
     public ProfileStore Store { get; private set; }=null!;
     Control? screen;
-    int captureFrames;
+    double captureSeconds;
     string? capturePath;
     public override void _Ready()
     {
@@ -26,7 +26,9 @@ public partial class App : Control
     }
     public override void _Process(double delta)
     {
-        if(capturePath is null || ++captureFrames<360)return;
+        if(capturePath is null)return;
+        captureSeconds+=delta;
+        if(captureSeconds<5)return;
         var error=GetViewport().GetTexture().GetImage().SavePng(capturePath);
         GD.Print("CAPTURE "+capturePath+" "+error);GetTree().Quit(error==Error.Ok?0:1);
     }
