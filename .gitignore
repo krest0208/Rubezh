@@ -16,3 +16,4 @@ native/Game/Data/campaign.*.json
 native/Game/exports/
 *.user
 *.suo
+__pycache__/
