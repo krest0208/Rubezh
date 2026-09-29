@@ -45,6 +45,7 @@ public partial class App : Control
     {
         if(screen is not null) { RemoveChild(screen); screen.QueueFree(); }
         screen=next; AddChild(next); Ui.Fill(next);
+        if(OS.IsDebugBuild()) GD.Print("RUBEZH_SCREEN="+next.GetType().Name);
     }
     public void ShowMenu() => Show(new MenuView(this));
     public void ShowArmory(string? unit=null) => Show(new ArmoryView(this,unit));
